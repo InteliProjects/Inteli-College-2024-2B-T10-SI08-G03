@@ -1,0 +1,8 @@
+Flask==2.3.2
+python-dotenv
+clickhouse-driver
+prefect==2.10.4
+pandas
+pyarrow
+clickhouse-connect
+streamlit

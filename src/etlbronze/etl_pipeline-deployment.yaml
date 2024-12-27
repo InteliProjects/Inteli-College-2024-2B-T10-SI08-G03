@@ -1,0 +1,9 @@
+version: 1
+work_pool:
+  name: default
+  type: prefect-agent
+work_queue_name: default
+tags: []
+flow_name: EtlPipeline
+manifest_path: ./etl_pipeline.py
+parameters: {}
