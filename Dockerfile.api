@@ -1,0 +1,17 @@
+# Use uma imagem base com Python
+FROM python:3.12-slim-bullseye
+
+# Define o diretório de trabalho para a pasta API
+WORKDIR /app/API
+
+# Copia o gerenciador de pacotes Poetry
+RUN pip install --no-cache-dir poetry
+
+# Copia a pasta src inteira (que contém a pasta API) para dentro do container
+COPY src/ /app
+
+# Instala as dependências do projeto
+RUN poetry install --no-dev
+
+# Define o comando padrão para rodar o backend com Gunicorn
+CMD ["poetry", "run", "gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "run:app"]

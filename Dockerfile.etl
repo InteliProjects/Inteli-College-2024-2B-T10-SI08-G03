@@ -1,0 +1,17 @@
+# Use uma imagem base com Python
+FROM python:3.12-slim-bullseye
+
+# Define o diretório de trabalho
+WORKDIR /app
+
+# Copia o gerenciador de pacotes Poetry
+RUN pip install --no-cache-dir poetry
+
+#pasta src do projeto é a pasta que será a principal no container
+COPY src/ /app
+
+# Instala as dependências do projeto
+RUN poetry install --no-dev
+
+# Define o comando padrão
+CMD ["poetry", "run", "python", "etlbronze/app.py", "--port=5001"]

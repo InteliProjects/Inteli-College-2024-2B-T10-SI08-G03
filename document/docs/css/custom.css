@@ -1,0 +1,30 @@
+/* Remove a barra de navegação superior */
+/* Remove a navbar mas mantém o ícone de busca */
+.navbar, .navbar-header, .navbar-collapse {
+    display: none !important;
+}
+
+/* Garante que o ícone de busca esteja visível no topo da página */
+.navbar .nav.navbar-nav.navbar-right {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    display: block;
+}
+
+/* Altera o comportamento do modal de busca */
+#mkdocs_search_modal {
+    z-index: 10000; /* Garante que o modal de busca fique acima dos outros elementos */
+}
+
+/* Ajusta a área principal para ocupar toda a largura, já que o cabeçalho foi removido */
+.md-main {
+    padding-top: 0 !important; /* Remove o espaço do cabeçalho */
+}
+
+/*tamanho limite para imagens*/
+img {
+    max-width: 100%;
+    height: auto;
+}

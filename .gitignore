@@ -1,0 +1,33 @@
+# Arquivos de cache do Python
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos de pacotes e virtual environments
+venv/
+env/
+.venv/
+.env
+
+# Arquivos de dados
+*.xlsx
+*.mdb
+*.csv
+*.parquet
+
+# Configurações específicas ou sensíveis
+*.env
+.env.*
+
+# Caches e logs
+*.log
+
+# Pastas geradas por IDEs ou editores
+.vscode/
+.idea/
+
+# Outros arquivos desnecessários
+src/services/__pycache__/
+src/services/_pycache_/

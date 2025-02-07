@@ -1,0 +1,22 @@
+site_name: Biggie
+theme:
+  name: cinder
+  # Se desejar, use a customização para remover o cabeçalho, se preferir
+extra_css:
+  - css/custom.css
+
+nav:
+  - Introdução: index.md
+  - Análise de Usuário: index.md#analise-de-usuario
+  - Análise de Negócio: index.md#analise-de-negocio
+  - Data Model Canvas: index.md#data-model-canvas
+  - Wireframe: index.md#wireframe
+  - Arquitetura: index.md#arquitetura
+  - Documentação do ETL: index.md#documentacao-do-etl
+  - Cubo de dados: index.md#cubo-de-dados
+  - Análise de Impacto Ético: index.md#analise-impacto-etico
+  - Referências: index.md#referencias
+
+plugins:
+  - search
+  - include-markdown

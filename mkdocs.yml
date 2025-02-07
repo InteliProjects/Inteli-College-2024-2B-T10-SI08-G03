@@ -1,0 +1,16 @@
+site_name: Biggie
+theme:
+  name: material
+plugins:
+  - search
+  - include-markdown
+nav:
+  - Introdução: index.md
+  - Análise de Usuário: AnaliseDeUsuario.md
+  - Análise de Negócio: AnaliseDeNegocios.md
+  - Data Model Canvas: DataModelCanvas.md
+  - Wireframe: Wireframe.md
+  - Arquitetura: Arquitetura.md
+  - Documentação do ETL: DocumentacaoETL.md
+  - Documentação de Análise de Impacto Ético: AnaliseImpactoEtico.md
+  - Referências: Referencias.md
